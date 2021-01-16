@@ -1,0 +1,18 @@
+---
+title: Post number three
+author: John Doe
+tags:
+  - liquidjs
+---
+
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<p>This is my blog.</p>
+
+<footer>
+  <p>Author: {{ author }}</p>
+  <p>Date: {{ page.date | localeDateString }}</p>
+  <p>Tags: {{ tags }}</p>
+</footer>

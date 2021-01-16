@@ -1,0 +1,19 @@
+---
+title: Post number five
+author: Janie Doe
+tags:
+  - typescript
+date: 2020-01-15
+---
+
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<p>This is my blog. I have overwritten the content date. Instead of using the filename, it now uses a hardcoded date from the frontmatter.</p>
+
+<footer>
+  <p>Author: {{ author }}</p>
+  <p>Date: {{ page.date | localeDateString }}</p>
+  <p>Tags: {{ tags }}</p>
+</footer>

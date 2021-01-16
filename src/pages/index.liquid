@@ -1,0 +1,20 @@
+---
+title: Home
+pagination:
+  data: collections.blogRecentByTags
+  size: 3
+  alias: posts
+permalink: "{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}/"
+---
+
+<p>This is the Homepage.</p>
+<p>There are many like it, but this one is mine.</p>
+
+<section>
+  <h2>Looping over a collection (max {{ pagination.size }} posts per page)</h2>
+  <ul>
+  {% for post in posts %}
+    {% include blog-summary.liquid %}
+  {% endfor %}
+  </ul>
+</section>

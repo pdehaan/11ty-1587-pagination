@@ -1,0 +1,18 @@
+---
+title: Post number seven
+author: Janine Doe
+tags:
+  - github-actions
+---
+
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<p>This is my blog.</p>
+
+<footer>
+  <p>Author: {{ author }}</p>
+  <p>Date: {{ page.date | localeDateString }}</p>
+  <p>Tags: {{ tags }}</p>
+</footer>

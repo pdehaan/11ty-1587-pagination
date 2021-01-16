@@ -1,0 +1,39 @@
+---
+title: Home
+permalink: /debug/
+---
+
+<p>This is the Homepage.</p>
+<p>There are many like it, but this one is mine.</p>
+
+<section>
+  <h2>`collections.blog` and liquidjs loop</h2>
+  {%- assign recentBlogs = collections.blog | reverse | slice: 0, 3 -%}
+  <ul>
+  {% for post in recentBlogs %}
+    {% include blog-summary.liquid %}
+  {% endfor %}
+  </ul>
+</section>
+
+<hr/>
+
+<section>
+  <h2>Custom `collections.blogRecentByTags` collection</h2>
+  <ul>
+  {% for post in collections.blogRecentByTags %}
+    {% include blog-summary.liquid %}
+  {% endfor %}
+  </ul>
+</section>
+
+<hr/>
+
+<section>
+  <h2>Custom `collections.blogRecentByGlob` collection</h2>
+  <ul>
+  {% for post in collections.blogRecentByGlob %}
+    {% include blog-summary.liquid %}
+  {% endfor %}
+  </ul>
+</section>
