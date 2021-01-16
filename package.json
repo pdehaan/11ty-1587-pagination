@@ -1,19 +1,28 @@
 {
   "name": "11ty-1587-pagination",
+  "description": "This repo shows how you can use 11ty's `pagination` feature in the front-matter to loop over a collection and dynamically create some archives.",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "eleventy",
-    "postbuild": "prettier www --write",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
   "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
-  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-1587-pagination/issues"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "del": "^6.0.0",
     "prettier": "^2.2.1"
+  },
+  "homepage": "https://github.com/pdehaan/11ty-1587-pagination#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-1587-pagination.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "postbuild": "prettier www --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
